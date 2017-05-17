@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>阿里妈妈</title>
+    <link rel="shortcut icon" href="//g.alicdn.com/mm/mm-brand/0.1.0/ico/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="//g.alicdn.com/thx/brix/2.0/brix-min.css?t=20150626">
+    <link rel="stylesheet" type="text/css" href="//g.alicdn.com/mm/mm/0.2.4/css/login/login.css">
+    
+        <script src="//g.alicdn.com/kissy/k/1.3.0/seed-min.js" data-config="{combine:true}"></script>
+    <script src="//g.alicdn.com/thx/brix/2.0/brix-min.js" bx-config="{autoPagelet:true,componentsPath:'//g.alicdn.com/mm/mm/0.2.4/app/',debug:false}"></script>
+    </head>
+<body><script type="text/javascript">
+(function (d) {
+var t=d.createElement("script");t.type="text/javascript";t.async=true;t.id="tb-beacon-aplus";
+t.setAttribute("exparams","category=&userid=&aplus");
+t.src=("https:"==d.location.protocol?"https://s":"http://a")+".tbcdn.cn/s/aplus_v2.js";
+d.getElementsByTagName("head")[0].appendChild(t);
+})(document);
+</script>
+
+    <div class="header">
+        <h1 class="mm-logo">
+            <a href="//www.alimama.com" target="_self" title="阿里妈妈"></a>
+        </h1>
+    </div>
+    <div class="content">
+        <div class="login-panel" bx-name="login" bx-path="components/module/login/login/">
+            <div class="hd">
+                <ul class="nav clearfix">
+                    <li class="selected"><h2>淘宝会员</h2></li>
+                    <li><h2>阿里妈妈会员</h2></li>
+                </ul>
+            </div>
+            <div class="bd cnt">
+                <div class="panel">
+                                        <iframe name="taobaoLoginIfr" width="100%" height="235" frameborder="0" scrolling="no" src="https://login.taobao.com/member/login.jhtml?style=mini&newMini2=true&from=alimama&redirectURL=http%3A%2F%2Flogin.taobao.com%2Fmember%2Ftaobaoke%2Flogin.htm%3Fis_login%3d1&full_redirect=true&disableQuickLogin=true" marginheight="0" marginwidth="0" border="0"></iframe>
+                </div>
+                <div class="panel" style="display:none;">
+                    <iframe name="mmLoginIfr" id="J_mmLoginIfr" width="100%" height="235" frameborder="0" scrolling="no" src="//www.alimama.com/member/minilogin.htm?redirect=http%3A%2F%2Fpub.alimama.com%2Fcommon%2Fcode%2FgetAuctionCode.json%3Fauctionid%3D528114332523%26adzoneid%3D76790852%26siteid%3D23150503%26scenes%3D1%26t%3D1491466158623%26_tb_token_%3DgGzz1isBBxVq%26pvid%3D10_202.96.204.154_725_1491466132743" marginheight="0" marginwidth="0" border="0"></iframe>
+                </div>
+            </div>
+            <div class="ft"></div>
+            <div class="visitor"></div>
+        </div>
+        <div class="login-bg">
+<script type="text/javascript">
+    document.write('<a style="display:none!important" id="tanx-a-mm_32959581_3400102_10938580"></a>');
+    tanx_s = document.createElement("script");
+    tanx_s.type = "text/javascript";
+    tanx_s.charset = "gbk";
+    tanx_s.id = "tanx-s-mm_32959581_3400102_10938580";
+    tanx_s.async = true;
+    tanx_s.src = "//p.tanx.com/ex?i=mm_32959581_3400102_10938580";
+    tanx_h = document.getElementsByTagName("head")[0];
+    if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+</script>
+</div>
+    </div>
+    <div class="footer">
+  
+
+<div id="alimama-footer" data-spm="a214tr9">
+  <div class="alimama-info">
+    <div class="link">
+      <a target="_black" href="//www.alimama.com/home/about-1.htm">联系客服</a>
+      <b>|</b>
+      <a target="_black" href="//open.taobao.com/">开放平台</a>
+      <b>|</b><a target="_black" href="//www.alimama.com/home/about-3.htm">法律声明</a>      <b>|</b>
+      <a target="_black" href="//www.alimama.com/home/about-4.htm">意见反馈</a>
+      <b>|</b>
+      <a target="_black" href="//jubao.alibaba.com">廉正举报</a>
+    </div>
+    <div class="copyright"><span>阿里妈妈版权所有 2007-2016</span><b>|</b><a target='_black' href='http://www.miibeian.gov.cn'>ICP证：浙B2-20070195</a>    </div>
+  </div>    <div class="aligroup-info">
+      <a target="_black" href="//www.alibabagroup.com/cn/global/home">阿里巴巴集团</a>
+      <b>|</b>
+      <a target="_black" href="//www.taobao.com">淘宝网</a>
+      <b>|</b>
+      <a target="_black" href="//www.tmall.com">天猫</a>
+      <b>|</b>
+      <a target="_black" href="//ju.taobao.com">聚划算</a>
+      <b>|</b>
+      <a target="_black" href="//www.aliexpress.com">全球速卖通</a>
+      <b>|</b>
+      <a target="_black" href="//www.alibaba.com">阿里巴巴国际交易市场</a>
+      <b>|</b>
+      <a target="_black" href="//www.1688.com">1688</a>
+      <b>|</b>
+      <a target="_black" href="//www.alimama.com">阿里妈妈</a>
+      <b>|</b>
+      <a target="_black" href="//www.alitrip.com">阿里旅行·去啊</a>
+      <b>|</b>
+      <a target="_black" href="//www.aliyun.com">阿里云计算</a>
+      <b>|</b>
+      <a target="_black" href="//www.yunos.com">YunOS</a>
+      <b>|</b>
+      <a target="_black" href="//aliqin.tmall.com">阿里通信</a>
+      <b>|</b>
+      <a target="_black" href="//www.net.cn">万网</a>
+      <br>
+
+      <a target="_black" href="//www.autonavi.com/">高德</a>
+      <b>|</b>
+      <a target="_black" href="//www.uc.cn/">UC</a>
+      <b>|</b>
+      <a target="_black" href="//www.umeng.com/">友盟</a>
+      <b>|</b>
+      <a target="_black" href="//www.xiami.com">虾米</a>
+      <b>|</b>
+      <a target="_black" href="//www.ttpod.com/">天天动听</a>
+      <b>|</b>
+      <a target="_black" href="//www.laiwang.com/">来往</a>
+      <b>|</b>
+      <a target="_black" href="//www.dingtalk.com/?lwfrom=20150130163937547">钉钉</a>
+      <b>|</b>
+      <a target="_black" href="//www.alipay.com">支付宝</a>
+    </div>
+
+    <div class="ualificate-info">
+      <a target="_black" href="http://www.pingpinganan.gov.cn/">
+        <img align="absmiddle" src="//img.alicdn.com/tps/i2/T1C3z7FudfXXcsE9Te-40-42.png" alt="网监局">
+      </a>
+      <a target="_black" href="http://122.224.75.236/wzba/login.do?method=hdurl&doamin=http://www.alimama.com.cn&amp;id=330108000003117&amp;SHID=1223.0AFF_NAME=com.rouger.gs.main.UserInfoAff&amp;AFF_ACTION=qyhzdetail&amp;PAGE_URL=ShowDetail" target="_blank">
+        <img align="absmiddle" src="//img.alicdn.com/tps/i1/T1KRgkFxdXXXaqJHTe-35-42.png">
+      </a>
+      <a target="_black" href="http://www.pingpinganan.gov.cn/">
+        <img align="absmiddle" alt="网监局" src="//img.alicdn.com/tps/i4/T1VVv9FABeXXbtCInf-38-42.png">
+      </a>
+    </div></div><!-- 因为 IE 6,7,8 对插入的 style 和 script 标签有兼容问题，所以放到后面 -->
+<style type="text/css">
+  #alimama-footer {
+    padding: 30px 10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4;
+    font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+  }
+  #alimama-footer a,
+  #alimama-footer span {
+    color: #333;
+    filter:alpha(opacity=50);
+    filter:none\9;
+    opacity: 0.5;
+  }
+  #alimama-footer a:hover {
+    filter:alpha(opacity=100);
+    filter:none\9;
+    opacity: 1;
+  }
+  #alimama-footer .alimama-info .link,
+  #alimama-footer .alimama-info .copyright {
+    display: inline-block;
+  }
+  #alimama-footer .alimama-info a,
+  #alimama-footer .alimama-info span {
+    margin-right: 20px;
+  }
+  #alimama-footer .alimama-info b {
+    display: none;
+    font-weight: 400;
+    color: #DDD;
+  }  #alimama-footer .aligroup-info b {
+    margin: 0 8px; 
+    font-weight: 400;
+    color: #DDD;
+  }
+  .ualificate-info {
+    margin-top: 8px;
+  }
+  .ualificate-info a {
+    margin-right: 20px;
+  }
+  .ualificate-info a img {
+    border: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+  }
+  .ualificate-info a:hover img {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: none;
+  }
+  @media screen and (max-width:767px) {
+    #alimama-footer {
+      padding: 30px 12px;
+      line-height: 2;
+    }
+    .aligroup-info {
+      display: none;
+    }
+    .ualificate-info {
+      display: none;
+    }
+    #alimama-footer .alimama-info .link {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+    }
+    #alimama-footer .alimama-info .copyright {
+      display: block;
+    }
+    #alimama-footer .alimama-info .copyright a,
+    #alimama-footer .alimama-info .copyright span {
+      display: block;
+      text-align: center;
+    }
+    #alimama-footer .alimama-info .copyright b {
+      display: none;
+    }
+    #alimama-footer .alimama-info a,
+    #alimama-footer .alimama-info span {
+      margin-right: 0;
+    }
+    #alimama-footer .alimama-info b {
+      display: inline-block;
+    }
+  }
+  </style>
+  <div class="meta">
+    <input name='_tb_token_' type='hidden' value='fsxYwz51mZq'>
+    alimama010150147046.eu13
+  </div>
+</div></body>
+</html>
