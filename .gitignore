@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+Guide Principle.md
+Guide Principle.md
+*.py
+test.py
+test.py
