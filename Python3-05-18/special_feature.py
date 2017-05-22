@@ -25,7 +25,7 @@ print("123与 abc 的全排列是:",[m+n for m in "123" for n in "abc"])
 import os #导入 os 模块
 print("当前目录下文件列表:",[d for d in os.listdir('.')])
 
-print("生成器: generator \n")
+print("生成器: generator 用()接收\n")
 g = (x*x for x in range(10))
 for n in g:
 	print(n)
