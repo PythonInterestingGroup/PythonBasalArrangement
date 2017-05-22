@@ -39,15 +39,19 @@ def analyUrl():
 		# print sourceName
 		namem=href.xpath('td/a[@target]')
 		print len(namem)
-		print namem[1].attrib.get('title')
-
+		print namem[0].attrib.get('title')
+		n=0
+		downloadStr=''
 		while n<len(namem):
 						
 		# downloadStr=namem[0].attrib.get('title')+namem[0].attrib.get('href')+'\n'+namem[1].attrib.get('title')+namem[1].attrib.get('href')+'\n'+namem[2].attrib.get('title')+':'+namem[2].attrib.get('href')+'\n'
-			downloadStr=namem[n-1].attrib.get('title')+':'+namem[n-1].attrib.get('href')+'\n'
-
+			
+			downloadStr1=namem[n].attrib.get('title')
+			downloadStr2=namem[n].attrib.get('href')
+			downloadStr=downloadStr+str(namem[n].attrib.get('title'))+':'+str(namem[n].attrib.get('href'))+'\n'
+			# print downloadStr
+			n=n+1
 		print downloadStr
-
 		size=str(href.xpath('td[4]')[0].text).strip()
 		mtype=str(href.xpath('td[5]')[0].text).strip()
 		zimu=str(href.xpath('td[6]')[0].text).strip()
