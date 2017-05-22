@@ -12,7 +12,7 @@ def rndColor2():
 def generateVerificationCode():
     chars = string.ascii_letters + string.digits
     im = Image.new('RGB', (240, 60), '#FFFFFF')
-    font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 45)
+    font = ImageFont.truetype('SourceCodePro-Regular.ttf', 45)
     draw = ImageDraw.Draw(im)
 
     for x in range(240):
