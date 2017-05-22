@@ -1,2 +1,1 @@
-# PythonBasalArrangement
-测试push
+###鲁迅说过，python在国外是小孩子学的编程语言
