@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="//g.alicdn.com/mm/mm-brand/0.1.0/ico/favicon.ico" type="image/x-icon">
     
     <link rel="stylesheet" type="text/css" href="//g.alicdn.com/thx/brix/2.0/brix-min.css?t=20150626">
-    <link rel="stylesheet" type="text/css" href="//g.alicdn.com/mm/mm/0.2.4/css/login/login.css">
+    <link rel="stylesheet" type="text/css" href="//g.alicdn.com/mm/mm/0.5.4/css/login/login.css">
     
         <script src="//g.alicdn.com/kissy/k/1.3.0/seed-min.js" data-config="{combine:true}"></script>
-    <script src="//g.alicdn.com/thx/brix/2.0/brix-min.js" bx-config="{autoPagelet:true,componentsPath:'//g.alicdn.com/mm/mm/0.2.4/app/',debug:false}"></script>
+    <script src="//g.alicdn.com/thx/brix/2.0/brix-min.js" bx-config="{autoPagelet:true,componentsPath:'//g.alicdn.com/mm/mm/0.5.4/app/',debug:false}"></script>
     </head>
 <body><script type="text/javascript">
 (function (d) {
@@ -20,31 +20,29 @@ d.getElementsByTagName("head")[0].appendChild(t);
 })(document);
 </script>
 
-    <div class="header">
+        <div class="header">
         <h1 class="mm-logo">
             <a href="//www.alimama.com" target="_self" title="阿里妈妈"></a>
         </h1>
     </div>
-    <div class="content">
-        <div class="login-panel" bx-name="login" bx-path="components/module/login/login/">
+            <div class="content">
+            <div class="login-panel" bx-name="login" bx-path="components/module/login/login/">
             <div class="hd">
                 <ul class="nav clearfix">
-                    <li class="selected"><h2>淘宝会员</h2></li>
+                    <li class="selected tb"><h2>淘宝会员</h2></li>
                     <li><h2>阿里妈妈会员</h2></li>
                 </ul>
             </div>
             <div class="bd cnt">
                 <div class="panel">
-                                        <iframe name="taobaoLoginIfr" width="100%" height="235" frameborder="0" scrolling="no" src="https://login.taobao.com/member/login.jhtml?style=mini&newMini2=true&from=alimama&redirectURL=http%3A%2F%2Flogin.taobao.com%2Fmember%2Ftaobaoke%2Flogin.htm%3Fis_login%3d1&full_redirect=true&disableQuickLogin=true" marginheight="0" marginwidth="0" border="0"></iframe>
+                                        <iframe name="taobaoLoginIfr" width="100%" height="280" frameborder="0" scrolling="auto" src="https://login.taobao.com/member/login.jhtml?style=mini&newMini2=true&from=alimama&redirectURL=http%3A%2F%2Flogin.taobao.com%2Fmember%2Ftaobaoke%2Flogin.htm%3Fis_login%3d1&full_redirect=true&disableQuickLogin=true" marginheight="0" marginwidth="0" border="0"></iframe>
                 </div>
                 <div class="panel" style="display:none;">
-                    <iframe name="mmLoginIfr" id="J_mmLoginIfr" width="100%" height="235" frameborder="0" scrolling="no" src="//www.alimama.com/member/minilogin.htm?redirect=http%3A%2F%2Fpub.alimama.com%2Fcommon%2Fcode%2FgetAuctionCode.json%3Fauctionid%3D528114332523%26adzoneid%3D76790852%26siteid%3D23150503%26scenes%3D1%26t%3D1491466158623%26_tb_token_%3DgGzz1isBBxVq%26pvid%3D10_202.96.204.154_725_1491466132743" marginheight="0" marginwidth="0" border="0"></iframe>
+                    <iframe name="mmLoginIfr" id="J_mmLoginIfr" width="100%" height="280" frameborder="0" scrolling="no" src="//www.alimama.com/member/minilogin.htm?redirect=http%3A%2F%2Fpub.alimama.com%2Fcommon%2Fcode%2FgetAuctionCode.json%3Fauctionid%3D528114332523%26adzoneid%3D76790852%26siteid%3D23150503%26scenes%3D1%26t%3D1491466158623%26_tb_token_%3DgGzz1isBBxVq%26pvid%3D10_202.96.204.154_725_1491466132743" marginheight="0" marginwidth="0" border="0"></iframe>
                 </div>
             </div>
-            <div class="ft"></div>
-            <div class="visitor"></div>
         </div>
-        <div class="login-bg">
+                <div class="login-bg">
 <script type="text/javascript">
     document.write('<a style="display:none!important" id="tanx-a-mm_32959581_3400102_10938580"></a>');
     tanx_s = document.createElement("script");
@@ -57,8 +55,8 @@ d.getElementsByTagName("head")[0].appendChild(t);
     if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
 </script>
 </div>
-    </div>
-    <div class="footer">
+            </div>
+        <div class="footer">
   
 
 <div id="alimama-footer" data-spm="a214tr9">
@@ -227,8 +225,8 @@ d.getElementsByTagName("head")[0].appendChild(t);
   }
   </style>
   <div class="meta">
-    <input name='_tb_token_' type='hidden' value='fsxYwz51mZq'>
-    alimama010150147046.eu13
+    <input name='_tb_token_' type='hidden' value='thDcLFfjdq'>
+    alimama010150147047.eu13
   </div>
-</div></body>
+</div>    </body>
 </html>
