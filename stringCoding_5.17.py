@@ -33,3 +33,23 @@ print("%.2f - %2d -- %02d" % (3.1415, 3, 3))
 
 print("%d%%" % 7)
 
+# loop
+
+names = ["roni", "mars", "sb"]
+for name in names:
+	print(name)
+
+sum = 0
+for x in range(1,10):
+	sum = sum + x
+print(sum)
+
+list(range(10000))
+
+n = 99
+
+while n > 0:
+	sum = sum + n
+	n = n - 2
+print(sum)
+
