@@ -1,6 +1,6 @@
 #-*-coding:utf-8-*-
 
-print '了解你的体脂率(身体脂肪率）也能帮助你决定你的减肥目标是否实际。请记得，减肥不等于减少体重'
+print "了解你的体脂率(身体脂肪率）也能帮助你决定你的减肥目标是否实际。请记得，减肥不等于减少体重"
 sex=raw_input('please input your sex: female or male \n')
 print sex
 waistline=input('please input your waistline/cm: \n')
