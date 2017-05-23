@@ -46,8 +46,6 @@ def analyUrl():
 						
 		# downloadStr=namem[0].attrib.get('title')+namem[0].attrib.get('href')+'\n'+namem[1].attrib.get('title')+namem[1].attrib.get('href')+'\n'+namem[2].attrib.get('title')+':'+namem[2].attrib.get('href')+'\n'
 			
-			downloadStr1=namem[n].attrib.get('title')
-			downloadStr2=namem[n].attrib.get('href')
 			downloadStr=downloadStr+str(namem[n].attrib.get('title'))+':'+str(namem[n].attrib.get('href'))+'\n'
 			# print downloadStr
 			n=n+1
