@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # _*_ coding:utf-8 _*_
 
 s = r''' 纯因为的 str 可以用 ASCII 编码为 bytes/ 字节
