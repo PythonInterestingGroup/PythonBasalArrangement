@@ -32,5 +32,7 @@ print("b\'hello world\' --D-utf-8-->" , b'hello world'.decode('utf-8'))
 print("b\"你好 世界\" --D-utf-8-->" , b'\xe4\xbd\xa0\xe5\xa5\xbd \xe4\xb8\x96\xe7\x95\x8c'.decode('utf-8'))
 
 print("\'你好 世界\' length:",len(d))
-print("b\'"+r"\xe4\xbd\xa0\xe5\xa5\xbd \xe4\xb8\x96\xe7\x95\x8c"+"\' length:",len(d.encode('utf-8')))
+print("bytes:b\'"+r"\xe4\xbd\xa0\xe5\xa5\xbd \xe4\xb8\x96\xe7\x95\x8c"+"\' length:"
+,len(d.encode('utf-8'))
+,"str:"+b'\xe4\xbd\xa0\xe5\xa5\xbd \xe4\xb8\x96\xe7\x95\x8c'.decode('utf-8'))
 
