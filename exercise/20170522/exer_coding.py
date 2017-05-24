@@ -36,3 +36,7 @@ print("bytes:b\'"+r"\xe4\xbd\xa0\xe5\xa5\xbd \xe4\xb8\x96\xe7\x95\x8c"+"\' lengt
 ,len(d.encode('utf-8'))
 ,"str:"+b'\xe4\xbd\xa0\xe5\xa5\xbd \xe4\xb8\x96\xe7\x95\x8c'.decode('utf-8'))
 
+
+print("utf-8 =>",len("编号89757A".encode('utf-8')))
+print("gbk =>",len("编号89757A".encode('gbk')))
+print("unicode =>",len("编号89757A"))
