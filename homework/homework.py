@@ -1,13 +1,16 @@
 # _*_ coding: utf-8 _*_
 def sex():
-	sex = raw_input("选择您的性别M(男)/F(女)：")
-	if sex.lower() == "f":
-		return "f"
-	elif sex.lower() == "m":
-		return "m"
-	else :
-		print("请选择正确的性别！")
-		sex()
+	while True:
+		sex = raw_input("选择您的性别M(男)/F(女)：")
+		if sex.lower() == "f":
+			return "f"
+		elif sex.lower() == "m":
+			return "m"
+		else :
+			print("请选择正确的性别！")
+			continue 
+
+
 def width():
 	l = raw_input("请输入您的腰围(cm)：")
 	return float(l)
