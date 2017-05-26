@@ -57,3 +57,37 @@ def rmap(x, y):
 	return t
 rm = reduce(rmap, l)
 print(rm)
+
+# 
+
+ll = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+def square(x):
+	return x*x
+
+def flatMap(f, ll):
+	r = []
+	for l in ll:
+		m = f(square, l)
+		r += list(m)
+	return r
+ 
+nll = flatMap(map, ll)
+print('nll = ', nll)
+
+print("---------")
+
+'''
+def fff(arr):
+	r = []
+	for i in arr:
+		r.append(i*i)
+	return r
+
+
+sss = map(fff, ll)
+print(list(sss))
+'''
+
+
+
