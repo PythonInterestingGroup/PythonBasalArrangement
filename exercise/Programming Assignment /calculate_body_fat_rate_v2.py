@@ -21,12 +21,10 @@ def inputWeight():
 
 ## 计算体脂率
 def calculateFatRat(waistline,weight,sex):
-	if sex.upper() == 'M':
-		x = 44.74
-	elif sex.upper() == 'F':
-		x = 34.89
-	else :
+	if sex.upper() not in SEX_ARRAY:
 		raise TypeError("bad operand type")
+	else :
+		x = 44.74 if sex.upper() == 'M' else 34.89
 		
 	a = waistline * 0.74
 	b = weight * 0.082 + x
