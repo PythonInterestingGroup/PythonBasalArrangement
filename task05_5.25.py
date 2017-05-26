@@ -108,7 +108,8 @@ extra = {'city': 'sh', 'job': 'engineer'}
 print(person('roni', '35', **extra))
 
 
-def person2(name, age, *, city, job) # 命名关键字参数
+def person2(name, age, *, city, job): # 命名关键字参数
+    pass
                                     
 # 如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符*了
 
@@ -129,6 +130,29 @@ print(fn(10))
 # 尾递归是指，在函数返回的时候，调用自身本身，并且，return语句不能包含表达式。这样，编译器或者解释器就可以把尾递归做优化，使递归本身无论调用多少次，都只占用一个栈帧，不会出现栈溢出的情况
 # 
 
+def fact(n):
+	return fact_iter(n, 1)
+
+def fact_iter(num, pro):
+	if num == 1:
+		return pro
+	return fact_iter(num-1, num * pro)
+
+fact(10)
+
+# 汉诺塔
+
+def move(n, A, B, C):
+	if n == 1:
+		print(A,'->', C) #　一个盘子时，直接从Ａ－＞Ｃ
+	else:
+		move(n-1, A, C, B) # 将前 n-1盘子移到 B 需要借助 C
+		move(1, A, B, C) # 将最后一个盘子移到 C 需要借助 B
+		move(n-1, B, A, C) # 最后将 n-1 个盘子有 B 借助 A 移到 C
+
+move(3, 'A', 'B', 'C')
+
+		                   
 
 
 # 见 5.22 提交
