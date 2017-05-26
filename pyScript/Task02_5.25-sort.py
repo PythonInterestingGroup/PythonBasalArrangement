@@ -16,4 +16,7 @@ for i in range(0, len(students)-1):
     comp(2, students, i)
 print students
 
+print sorted(students, key = lambda student:student[1])
 
+print sorted(students, key = lambda student:student[2])
+#print students
