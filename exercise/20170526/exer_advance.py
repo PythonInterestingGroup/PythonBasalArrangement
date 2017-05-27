@@ -2,7 +2,6 @@
 from collections import Iterable  
 
 ## 切片
-print('--------------------- ')
 L1 = ['class','interface','method','field','package']
 
 print(L1)
