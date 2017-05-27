@@ -58,7 +58,7 @@ def rmap(x, y):
 rm = reduce(rmap, l)
 print(rm)
 
-# 
+# 展平二维数组
 
 ll = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
@@ -75,7 +75,36 @@ def flatMap(f, ll):
 nll = flatMap(map, ll)
 print('nll = ', nll)
 
+
 print("---------")
+
+
+'''
+def qartt(x,y):
+
+	if isinstance(x, int):
+		return [x,y]
+	else :
+		l = []
+		for n in x:
+			l.append(n)
+		#print(l)
+		#print(isinstance(l, list))
+		l.append(y)
+		return l 
+		
+
+L = range(1, 10)
+print(reduce(qartt,L))
+'''
+
+def char2num(s):
+        return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
+
+def str2float(x):
+	pass
+
+# print('str2float(\'123.456\') =', str2float('123.456'))
 
 '''
 def fff(arr):
@@ -88,6 +117,8 @@ def fff(arr):
 sss = map(fff, ll)
 print(list(sss))
 '''
+
+
 
 
 
