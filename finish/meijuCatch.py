@@ -64,6 +64,7 @@ def removeD(list):
 
 if __name__ == '__main__':
 	baselist=getUrl('http://www.ttmeiju.com/')
+	print baselist
 	downloadList=geturlList(baselist)
 	downloadList=removeD(downloadList)
 	path=os.path.split( os.path.realpath( sys.argv[0] ) )[0]  

@@ -26,6 +26,8 @@ def analyUrl():
 	# print '123'+hrefs2[0]
 	path=os.path.split( os.path.realpath( sys.argv[0] ) )[0]  
 	fo=open('%s/meiju.txt'%(path),'w')
+	print hrefs
+	
 	# fo.write(hrefs[1].xpath('@href'))
 	# font=hrefs[0].xpath['/font']
 	# info = hrefs[0].xpath('string(.)') 
@@ -56,9 +58,9 @@ def analyUrl():
 				fo.write(info.strip()+':'+'\n')
 				# fo.write(str(href.attrib.get('title')+info).strip()+'\n')
 			# fo.write(str(href.attrib.get('href')+href.text).strip()+'\n')
-		else:
+		# else:
 			
-		# print name
+			# print name
 		# print name
 		# if name.text:
 		# 	print name
