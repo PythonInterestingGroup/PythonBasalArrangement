@@ -27,15 +27,22 @@ dict = {}
 dict['one'] = "This is one"
 dict[2] = "This is two"
 tinydict = {'name': 'john', 'code': 6734, 'dept': 'sales'}
-print(dict['one'])# 输出键为'one' 的值
-print(dict[2])#输出键为2的值
-print(tinydict)#输出完整的字典
-print(tinydict.keys())#输出所有的键
-print(tinydict.values())#输出所有的值
+print(dict['one'])  # 输出键为'one' 的值
+print(dict[2])  # 输出键为2的值
+print(tinydict)  # 输出完整的字典
+print(tinydict.keys())  # 输出所有的键
+print(tinydict.values())  # 输出所有的值
 
-#Python数据类型转换：数据类型的转换，只需要将数据类型作为函数名即可
+# Python数据类型转换：数据类型的转换，只需要将数据类型作为函数名即可
 n = '1234'
 type(n)
 float(n)
 print(n)
 
+# 布尔值True、False、and、or、not
+if True:
+    print('true')
+else:
+    print('flase')
+# 空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。
+# 常量：在Python中，通常用全部大写的变量名表示常量

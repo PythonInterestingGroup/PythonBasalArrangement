@@ -45,6 +45,22 @@ print(a, b, c)
 # print(d)
 s = 'abcdefg'
 print(s[3:5])
+'''
+输出I'm "OK"!,使用转义字符\,在字符串的’和“前面分别加上\
+'''
+print('I\'m\"0k\"!')
 
-
-
+"""
+转义字符\可以转义很多字符，比如\n表示换行，\t表示制表符，字符\本身也要转义，所以\\表示的字符就是\,Python还允许用r''表示''内部的字符串默认不转义
+如果字符串内部有很多换行，用\n写在一行里不好阅读，为了简化，Python允许用'''  '''的格式表示多行内容
+"""
+print('I am ok \nhello world')
+print('i\t,,,,,,,,')
+print('I\'m learning python,1\\2\\3')
+print(r'happy a dog\\\\\\\\\\\\\\\\\\\n')
+print('''line1
+line2
+line3''')
+print('line1'
+      'line2'
+      'line3')
