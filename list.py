@@ -47,3 +47,17 @@ list1.reverse()  # 该方法没有返回值，但是会对列表的元素进行�
 print(list1)
 list1.sort()
 print(list1)
+
+L = [
+    ['Apple', 'Google', 'Microsoft'],
+    ['Java', 'Python', 'Ruby', 'PHP'],
+    ['Adam', 'Bart', 'Lisa']
+]
+# Apple:
+# 打印Python:
+# 打印Lisa:
+print(L[0][0])
+print(L[1][1])
+print(L[2][2])
+
+
