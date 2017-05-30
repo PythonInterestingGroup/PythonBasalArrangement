@@ -48,10 +48,28 @@ def get_value(x) :
 ## ???
 ## ll2 = list(map(get_value , (j for i in ll for j in i)))
 
+def dr(x) :
+	L = []
+	for i in x:
+		for j in i :
+			L.append(j)
+	return L
+	
+def dr_v2(f,x):
+	L = []
+	for i in x:
+		L += map(f, i)
+	return L
+	
+
+ll2 = list(map(lambda x : x * x ,dr(ll)))
 
 ll3 = list((j * j for i in ll for j in i))
+
+ll4 = dr_v2(lambda x : x * x, ll)
 
 print("ll:",ll)
 print("ll2",ll2)
 print("ll3",ll3)
+print("ll4",ll4)
 
