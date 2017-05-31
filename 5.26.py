@@ -40,7 +40,8 @@ print(isinstance('abc', Iterable))
 print(isinstance([], Iterable))
 print(isinstance(123, Iterable))
 
-for index, value in enumerate(l):
+for index, value in enumerate
+(l):
 	print('index = ', index, 'value = ', value)
 
 

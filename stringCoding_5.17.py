@@ -3,22 +3,22 @@
 # Unicode(http://www.jianshu.com/p/dbc65e439311)
 # 255 / 65,535 / 4,294,967,295
 
-print(ord('A')) # ord()
-print(chr(66)) # chr()
+print(ord('A'))  # ord()
+print(chr(66))  # chr()
 print(chr(25991))
-print('\u4e2d\u6587') # unicode scalar
+print('\u4e2d\u6587')  # unicode scalar
 
-x = b'ABC' # bytes 类型 => 每个字符只占一个字节 ??
+x = b'ABC'  # bytes 类型 => 每个字符只占一个字节 ??
 
-'ABC'.encode('ascii') # => encode
+'ABC'.encode('ascii')  # => encode
 z = '中文'.encode('utf-8')
 print(z)
-b'ABC'.decode('ascii') # => decode
+b'ABC'.decode('ascii')  # => decode
 dz = z.decode('utf-8')
 print(dz)
 
-print("z length = ", len(z)) # 字符数
-print("dz lenght = ",len(dz)) # 字节数
+print("z length = ", len(z))  # 字符数
+print("dz lenght = ", len(dz))  # 字节数
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -37,11 +37,11 @@ print("%d%%" % 7)
 
 names = ["roni", "mars", "sb"]
 for name in names:
-	print(name)
+    print(name)
 
 sum = 0
-for x in range(1,10):
-	sum = sum + x
+for x in range(1, 10):
+    sum = sum + x
 print(sum)
 
 list(range(10000))
@@ -49,7 +49,6 @@ list(range(10000))
 n = 99
 
 while n > 0:
-	sum = sum + n
-	n = n - 2
+    sum = sum + n
+    n = n - 2
 print(sum)
-
