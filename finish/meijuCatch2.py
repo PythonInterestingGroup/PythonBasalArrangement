@@ -1,4 +1,5 @@
-# coding:utf-8
+# -*- coding: utf-8 -*-
+
 import os
 import sys
 import re
@@ -13,7 +14,7 @@ def mkdir(path):
     path=path.rstrip("\\")
     isExists=os.path.exists(path)
     if not isExists:
-        print path+' 创建成功'
+        # print path+' 创建成功'
         os.makedirs(path)
         return True
     else:
@@ -51,6 +52,7 @@ def analyUrl(url):
 					zimu=str(href.xpath('td[6]')[0].text).strip()
 
 					fo.write(movieName+':'+'_'+size+'_'+mtype+'_'+zimu+'_'+':'+'\n'+downloadStr)
+					print 1
 
 	
 def  getUrl(url):
@@ -114,17 +116,24 @@ if __name__ == '__main__':
 		name='/ttmeiju/'+name
 
 		path=path+name
-		print path
-		uipath = unicode(path , "gbk")
-
-
-		mkdir(uipath)
+		# print path
+		mkdir(path)
 		# shutil.rmtree(path)
-		# uipath = unicode(path , "gbk")
-		# fo=open('%s/seed.txt'%(path))
-		fo=open(uipath)
-		# path=''
-		# analyUrl(x)
+		path=path.strip()
+		path=path.rstrip("\\")
+		isExists=os.path.exists(path)
+		if isExists:
+			path=path+'/seed.txt'
+			# print path
+			# fo=open(path.decode('utf-8'),'w')
+			fo=open(path.decode('utf-8'),'w')
+			# fo=open(path)
+			path=''
+			analyUrl(x)
+			
+			
+		else:
+			print '1'
 	fo.close()
 
 
