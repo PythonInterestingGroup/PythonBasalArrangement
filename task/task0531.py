@@ -133,3 +133,30 @@ def count_v2():
 
 f4,f5,f6 = count_v2()
 print("f4:",f4(),"f5:",f5(),"f6:",f6())
+
+
+i=1
+def f():
+	return i*i
+
+ch=f
+i=i+1
+print(ch())  #4
+
+i=1
+def f(j):
+	return j*j
+ch=f(i)
+i=i+1
+print(ch)  #1
+
+a=1
+b=a
+a+=2
+print('a',a,'b',b)
+
+c=[1]
+d=c
+c[0]+=2
+c.append(1)
+print('c',c,'d',d) #c的地址赋给d
