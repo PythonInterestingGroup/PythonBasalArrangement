@@ -107,4 +107,29 @@ print('funca:',funca(),'funcb:',funcb(),'funcc:',funcc()) #999
 
 
 #用匿名函数代替，lamdba表达式
-#不会
+
+def count_v1():
+	fs = []
+	for i in range(1,4):
+		f=lambda:i*i			
+		fs.append(f)#[f()]
+	return fs
+	
+f1,f2,f3 = count_v1()#[f,f,f]
+print("f1:",f1(),"f2:",f2(),"f3:",f3())
+
+def count_v2():
+	def f(j):
+		g=lambda:j*j 
+		#def g():
+			#return j*j
+		#j=j+1 加一行 结果4,9，16
+		return g  
+	fs = []
+	for i in range(1,4):
+		fs.append(f(i)) # f(i)立刻被执行，因此i的当前值被传入f()
+		#f[1],f[2],f[3]
+	return fs
+
+f4,f5,f6 = count_v2()
+print("f4:",f4(),"f5:",f5(),"f6:",f6())
