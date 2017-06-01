@@ -6,6 +6,8 @@ import requests
 from lxml import html
 reload(sys)
 sys.setdefaultencoding('utf8')
+
+
 def analyUrl(url):
 	response=requests.get(url).content
 	selector = html.fromstring(response)
@@ -63,6 +65,8 @@ def removeD(list):
 	return newlist
 
 if __name__ == '__main__':
+	
+
 	baselist=getUrl('http://www.ttmeiju.com/')
 	print baselist
 	downloadList=geturlList(baselist)
@@ -73,3 +77,4 @@ if __name__ == '__main__':
 		print x
 		analyUrl(x)
 	fo.close()
+
