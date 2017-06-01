@@ -36,7 +36,7 @@ def count_v2():
 	def f(j):
 		def g():
 			return j*j
-		print("count_v2 j =",j)
+		j += 1
 		return g
 	fs = []
 	for i in range(1,4):
@@ -126,9 +126,9 @@ def test_closure_4():
 	f = []
 	i = [1,2,3]
 	
-	def func(i):
+	def func(j):
 		def g():
-			return i[0] * i[0]
+			return j[0] * j[0]
 		return g
 	
 	f.append(func(i))
