@@ -8,8 +8,10 @@
 #time模块见learnmoduletime.py
 
 import time
+import functools
 
 def exetime(func):
+    @functools.wraps(func)
     def time1(*args,**kw):
         print('%s,start funtion %s'%(time.strftime('"%Y-%m-%d %X"',time.localtime()),func.__name__))
         #print('%s,start funtion %s'%(time.strftime('"%Y-%m-%d %X"'),func.__name__)) 同上        
