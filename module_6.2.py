@@ -65,6 +65,7 @@ fibonacci(6)
 
 
 
+'''
 def fib02(n,a=1,b=1,l=[]):
 	if n == 1:
 		l = l + [a]
@@ -100,18 +101,13 @@ def fib03(num,pro=1,a=1,b=1,l=[]):
 		return fib03(num-1,pro,a,b,l)
 
 print(fact(6)[-1])
-
+'''
 
 import decorator
 
 f0 = decorator.log(fibonacci)
 f0(7)
 
-f1 = decorator.log(fib02)
-f1(7)
-
-f2 = decorator.log(fib03)
-f2(7)
 
 
 
