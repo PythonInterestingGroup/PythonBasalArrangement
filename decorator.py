@@ -1,11 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+'time count'
+
+__author__ = 'roni'
+
+
 import functools
 import time
 
 import sys
 
+'''
 print(sys.version)
 print(sys.getdefaultencoding())
 print('我得到的'.encode('utf-8'))
+'''
 
 '''
 def log(func):
@@ -50,20 +60,23 @@ def log(func):
 		print("%s" % func.__name__,"use time:%.10f" % r)
 	return wrapper
 
-#@log
-def funcTime():
-	pass
+'''
+@log
+def funcTime(des):
+	print(des)
 
-#funcTime()
+funcTime("i zui shuai")
+'''
 
-log(funcTime)()
+#log(funcTime)()
 
-
+'''
 # 当函数的参数个数太多，需要简化时，使用functools.partial可以创建一个新的函数，这个新函数可以固定住原函数的部分参数，从而在调用时更简单
 int2 = functools.partial(int, base = 2)
 print(int2('10'))
+'''
 
-
+'''
 print("========")
 
 b = time.time()
@@ -71,3 +84,7 @@ funcTime()
 e = time.time()
 r = e-b
 print("%s" % funcTime.__name__,"use time:%.10f" % r)
+'''
+
+if __name__ == '__main__':
+	log(func)
