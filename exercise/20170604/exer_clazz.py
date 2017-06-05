@@ -32,6 +32,11 @@ class Teacher(object):
 		self.__score = score
 		
 	def print_score(self):
-		print('%s:%s'%(self.name,self.score))
+		print('%s:%s'%(self.__name,self.__score))
+		
+hanzo = Teacher("hanzo",70)
+## print(hanzo.__score)
+hanzo.print_score()
+
 		
 	
