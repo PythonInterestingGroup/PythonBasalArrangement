@@ -52,6 +52,7 @@ print reading.__name__
 
 
 print '\n Usage of wrapper:'
+# 等价于partial(update_wrapper, wrapped = wrapped, assigned = assigned, updated = updated)
 def _decoWraps(func):
 	@functools.wraps(func)
 	def __decoWraps(*args, **kw):
