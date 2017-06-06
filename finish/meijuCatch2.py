@@ -135,37 +135,39 @@ if __name__ == '__main__':
 	# fo=open('%s/meiju.txt'%(path),'w')
 	path=os.path.split( os.path.realpath( sys.argv[0] ) )[0]  
 	listpath=path+'/ttmeiju'+'/catalog.txt'
-	fileopen=open(listpath,'w')
+	isExists=os.path.exists(listpath)
+	if isExists:
+		fileopen=open(listpath,'w')
 
-	for x in downloadList:
-		# path='/Users/essios/Desktop/'
-		# if "Bates.Motel" in x:
-		# name=x.replace('http://www.ttmeiju.com//meiju/','')
-		# name=name.replace('.html','')
-		name=gettitle(x)
-		# print str(name)
-		fileopen.write(name+'\n')
-		name='/ttmeiju/'+name
-		path=path+name
-		# print path
-		mkdir(path)
-		# shutil.rmtree(path)
-		path=path.strip()
-		path=path.rstrip("\\")
-		isExists=os.path.exists(path)
-		if isExists:
-			path=path+'/seed.txt'
-			# print path
-			# fo=open(path.decode('utf-8'),'w')
-			fo=open(path.decode('utf-8'),'w')
-			# fo=open(path)
-			path=''
-			analyUrl(x)
-			
-			
-		else:
-			print '1'
-	fo.close()
-	fileopen.close()
+		for x in downloadList:
+			# path='/Users/essios/Desktop/'
+			# if "Bates.Motel" in x:
+			# name=x.replace('http://www.ttmeiju.com//meiju/','')
+			# name=name.replace('.html','')
+			name=gettitle(x)
+			# print str(name)
+			fileopen.write(name+'\n')
+			name='/ttmeiju/'+name
+			path=path+name
+			print path
+			mkdir(path)
+			# shutil.rmtree(path)
+			path=path.strip()
+			path=path.rstrip("\\")
+			isExists=os.path.exists(path)
+			if isExists:
+				path=path+'/seed.txt'
+				# print path
+				# fo=open(path.decode('utf-8'),'w')
+				fo=open(path.decode('utf-8'),'w')
+				# fo=open(path)
+				path=''
+				analyUrl(x)
+				
+				
+			else:
+				print '1'
+		fo.close()
+		fileopen.close()
 
 
