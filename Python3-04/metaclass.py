@@ -28,3 +28,6 @@ class MyList(list, metaclass = ListMetaclass):
 L = MyList()
 L.add(1)
 print(L)
+
+x = 1
+print("x>1") if x >1 else print("x<=1")
