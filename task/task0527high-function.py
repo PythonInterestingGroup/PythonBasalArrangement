@@ -25,6 +25,17 @@ print(reduce(g, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
 #t3=t2+[4*4]
 #函数返回值不仅可以是简单的数据类型int,str，也可以是list等
 
+def q(x,y):
+    if isinstance(x,int):
+        return [x*x,y**2]
+    else:
+        l=list(x)
+        l.append(y**2)
+        return l
+    #直接return l.append(y**2)是错误的，因为append是么有返回值的
+
+print('error',reduce(q, [1, 2, 3, 4, 5, 6, 7, 8, 9]))    
+
 
 #将一个二维数组内的每个数平方并且展平成一维数组
 #例如: ll = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] => [1, 4, 9, 16, 25, 36, 49, 64, 81]
