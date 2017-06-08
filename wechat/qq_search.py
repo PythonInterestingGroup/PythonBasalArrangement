@@ -42,11 +42,12 @@ def getdzList():
 		# print duanzi[3]
 		mylist.append(duanzi[3])
 	return mylist
+def getrandom():
+	thelist= getdzList()
+	t=random.randint(0, len(thelist))
+	print t
+	return thelist[t]
 
-thelist= getdzList()
-t=random.randint(0, len(thelist))
-print t
-print thelist[t]
 
 
 
