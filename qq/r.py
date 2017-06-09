@@ -55,9 +55,11 @@ def answerQ(question):
     payload = {'key':KEY,'info':question}
     try:
         r=requests.post(apiUrl,data=payload)
+        print r.text
         mytext = json.loads(r.text)
         return mytext['text']
     except Exception as e:
+        print e
         return '网太卡了,我什么都不知道'
 print answerQ('北京天气')
 

@@ -5,6 +5,7 @@ import random
 from qqbot import QQBotSlot as qqbotslot, RunBot
 import requests
 import searchm
+import fh
 KEY='70a315f07d324b3ea02cf21d13796605'
 def answerQ(question):
     apiUrl='http://www.tuling123.com/openapi/api'
@@ -17,7 +18,8 @@ def answerQ(question):
 		mytext = json.loads(r.text)
 		return mytext['text']
     except Exception as e:
-		return '网太卡了,我什么都不知道'
+    	# print e
+		return '我不知道,不会百度么'
     # return result
  #    try:
  #    	r = requests.post(apiUrl, data=payload)
@@ -78,9 +80,15 @@ def onQQMessage(bot, contact, member, content):
     # if '@ME' in content:
 	if '段子' in content:
 	    bot.SendTo(contact, '%s'%getrandom())
+	elif 'fh ' in content:
+		detail=content.replace('fh ','')
+		if fh.searchFH(detail):
+			bot.SendTo(contact, fh.searchFH(detail))
+		else:
+			bot.SendTo(contact, '资源18x,请联系群主')
 	elif '黄图' in content:
-	    bot.SendTo(contact, '请联系熊岳')
-	elif '美剧' in content:
+	    bot.SendTo(contact, '请联系群主')
+	elif '美剧 ' in content:
 	    # bot.SendTo(contact, '搜索中,请稍候...')
 	    detail=content.replace('美剧 ','')
 	    # seedList=searchm.searchMovie(detail)
