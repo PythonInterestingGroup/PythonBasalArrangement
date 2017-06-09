@@ -206,10 +206,6 @@ class Robot(object):
 			pass
 
 
-
-
-
-
 robot = Robot('roni', Coordinate(0, 0), Direction['up'])
 robot.changeDirection(Direction['down'])
 robot.goAction(Direction['right'], 1)
