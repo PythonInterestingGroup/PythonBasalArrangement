@@ -20,7 +20,25 @@ class UrsusRobot(object):
 		self.__name = name
 		self.__point = point
 		self.__direction = self.__TOP
+		self.__step = 1
+		self.__stepCount = 0
 		
+	@property
+	def step(self):
+		return self.__step
+		
+	@step.setter
+	def step(self,value):
+		if not isinstance(value, int):
+			raise ValueError('step must be int')
+		elif 0 < value < 10:
+			self.__step = value
+		else:
+			raise ValueError('step must between 0 ~ 10!')
+			
+	@property
+	def stepCount(self):
+		return self.__stepCount
 	
 	def turnLeft(self):
 		print('机器人向左转')
@@ -32,16 +50,16 @@ class UrsusRobot(object):
 		
 		
 	def moveLeft(self):
-		self.__move(UrsusRobot.__LEFT, lambda :  [self.__point.x - 1, self.__point.y])
+		self.__move(UrsusRobot.__LEFT, lambda :  [self.__point.x - self.__step, self.__point.y])
 	
 	def moveTop(self):
-		self.__move(UrsusRobot.__TOP, lambda :  [self.__point.x, self.__point.y + 1])
+		self.__move(UrsusRobot.__TOP, lambda :  [self.__point.x, self.__point.y + self.__step])
 					
 	def moveRight(self):
-		self.__move(UrsusRobot.__RIGHT, lambda :  [self.__point.x + 1, self.__point.y])
+		self.__move(UrsusRobot.__RIGHT, lambda :  [self.__point.x + self.__step, self.__point.y])
 		
 	def moveBottom(self):
-		self.__move(UrsusRobot.__BOTTOM, lambda :  [self.__point.x, self.__point.y - 1])
+		self.__move(UrsusRobot.__BOTTOM, lambda :  [self.__point.x, self.__point.y - self.__step])
 		
 	
 	def print_loaction(self):
@@ -55,6 +73,7 @@ class UrsusRobot(object):
 		if self.__direction == direction :
 			self.__point.x, self.__point.y = func()
 			self.__hint_move(direction)
+			self.__stepCount += 1
 		else :
 			self.__hint_direction_error(direction)
 					
@@ -66,7 +85,7 @@ class UrsusRobot(object):
 
 if __name__ == '__main__':
 	wall_E = UrsusRobot('wall-E',Point(0, 0))
-
+	wall_E.step = 2
 	for i in range(6):
 		wall_E.moveTop()
 		
@@ -82,6 +101,7 @@ if __name__ == '__main__':
 	for i in range(4):
 		wall_E.moveBottom()
 	wall_E.print_loaction()
+	print(wall_E.stepCount)
 		
 		
 		
