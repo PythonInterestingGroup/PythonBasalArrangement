@@ -47,8 +47,7 @@ class Fib(object):
 f = Fib()
 print(f[10])
 
-#class Fib_2(object):
-#	def __getitem__(self,n):
+
 		
 		
   
