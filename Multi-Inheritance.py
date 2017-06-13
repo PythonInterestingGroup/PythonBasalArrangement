@@ -43,6 +43,26 @@ print(callable(Student('dec'))) # 通过callable()函数，我们就可以判断
 print(callable(max))
 
 
+class Chain(object):
+	def __init__(self, path = 'GET'):
+		self._path = path
+	def __getattr__(self, path):
+		return Chain('%s/%s' % (self._path, path))
+	def __call__(self,value):
+		return Chain('%s/%s' % (self._path, value))
+
+	def __str__(self):
+		return '%s' % self._path
+
+	__repr__ = __str__
+
+
+c = Chain().users('roni')
+print(type(c))
+
+print(Chain().users('roni').repos)
+
+		
 
 class Fib(object):
 	def __init__(self):
@@ -126,33 +146,88 @@ for name,member in Weekend.__members__.items(): # value属性则是自动赋给�
 
 
 
-class Hello(object):
-	def hello(self, name: 'World'):
-		print('Hello, %s.' % name)
+
+
+from HelloModule import Hello
+h = Hello()
+h.hello()
+
 
 
 def fn(self, name='world'):
 	print('Hello, %s' % name)
 
-he = type('Hel', (object,), dict(hello=fn))
+he = type('Hel', (object,), dict(hello=fn))  #动态创建类
 h = he()
-h.hello()
+h.hello('guy')
 
 
 
+##
+## 先定义metaclass，就可以创建类，最后创建实例。
+##
 
 
 
+class ListMetaclass(type):
+	def __new__(cls, name, bases, attrs):
+		attrs['add'] = lambda self,value: self.append(value)
+		return type.__new__(cls, name, bases, attrs)
+
+class MyList(list, metaclass=ListMetaclass):
+	pass
+
+l = MyList()
+l.add(1)
+print(l)
+
+
+##
+## ORM 框架
+##
+
+class Field(object): # 负责保存数据库表的字段名和字段类型
+	def __init__(self, name, column_type):
+		super(Field, self).__init__()
+		self.name = name
+		self.column_type = column_type
+	def __str__(self):
+		return '<%s:%s>' % (self.__class__.__name, self.name)
+
+		
+class StringField(Field):
+	def __init__(self, name):
+		super(StringField, self).__init__(name, 'varchar(1000)')
+		
+
+class Interger(Field):
+	def __init__(self, name):
+		super(Interger, self).__init__(name, 'biginit')
+		
+
+class Modelmetaclass(type):
+	def __new__(cls, name, bases, attrs):
+		if name == 'Model':
+			return type.__new__(cls, name, bases, attr)
+		print('Found model: %s' % name)
+
+		mappings = dict()
+		for k,v in attrs.items():
+			if isinstance(v, Field):
+				print('Found mapping: %s  ==> %s' % (k, v))
+				mappings[k] = v
+
+		for k in mapping.keys():
+			attrs.pop(k)
+
+		attrs['__mappings__'] = mappings
+		sttrs['__table__'] = name
+		return type.__new__(cls, name, bases, attrs)
 
 
 
-
-
-
-
-
-
-
+					
+		
 
 
 
