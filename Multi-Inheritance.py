@@ -228,6 +228,8 @@ class Modelmetaclass(type):
 
 					
 		
+x = lambda i: i*i
+print(x(3))
 
 
 
