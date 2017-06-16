@@ -4,7 +4,6 @@ import os
 import sys
 import re
 import requests
-import shutil
 from lxml import html
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -28,4 +27,4 @@ def analyUrl(name):
 def searchFH(name):
 	seedstr = '\n'.join(analyUrl(name))
 	return	seedstr
-# print searchFH('长城')
+print searchFH('长城')

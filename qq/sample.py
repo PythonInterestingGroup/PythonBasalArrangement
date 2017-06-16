@@ -1,8 +1,9 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from qqbot import QQBotSlot as qqbotslot, RunBot
+from qqbot import QQBot
+# @qqbotslot
 
-@qqbotslot
 def onQQMessage(bot, contact, member, content):
     if '@ME' in content:
         bot.SendTo(contact, '%s， 想我了吧123@熊岳？' % member.name)
@@ -12,8 +13,18 @@ def onQQMessage(bot, contact, member, content):
         bot.SendTo(contact, 'QQ机器人已关闭')
         bot.Stop()
 
-if __name__ == '__main__':
-    # 注意： 这一行之前的代码会被执行两边
-    # 进入 RunBot() 后，会重启一次程序（ subprocess.call(sys.argv + [...]) ）
-    RunBot()
-    # 注意: 这一行之后的代码永远都不会被执行。
+# if __name__ == '__main__':
+#     # 注意： 这一行之前的代码会被执行两边
+#     # 进入 RunBot() 后，会重启一次程序（ subprocess.call(sys.argv + [...]) ）
+#     RunBot()
+#     # 注意: 这一行之后的代码永远都不会被执行。
+bot=QQBot()
+# class mybot(QQBot):
+#     """docstring for mybot"""
+#     def __init__(self, arg):
+#         super(mybot, self).__init__()
+#         self.arg = arg
+
+bot.Login(['-q', '1808163167'])
+print bot.list
+cd  /etc/sysconfig/network-scripts/

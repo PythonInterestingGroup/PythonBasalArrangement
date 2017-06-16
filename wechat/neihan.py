@@ -64,7 +64,7 @@ def getContent():
 							# print joker['group']['digg_count']
 							# print joker['group']['text']
 							# print joker['group']['create_time']
-							if joker['group']['digg_count']>1000:
+							if joker['group']['digg_count']>10000:
 								insertChatContent(joker['group']['create_time'],joker['group']['digg_count'],joker['group']['text'])
 							# bury_count 踩 comment_count 评论 share_count 转发 
 							# share_url for 101
