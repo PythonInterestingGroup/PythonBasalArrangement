@@ -9,6 +9,7 @@ sys.setdefaultencoding('utf8')
 
 # https://home.ctfile.com/#item-files/action-index/folder_id-20610733
 def analyUrl(url):
+	headers = {'cookie':cookiestr}  
 	url='https://home.ctfile.com/#item-files/action-index/folder_id-20610733'
 	response=requests.get(url).content
 	selector = html.fromstring(response)
