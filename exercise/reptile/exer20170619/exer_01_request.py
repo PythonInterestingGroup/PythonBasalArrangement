@@ -1,12 +1,12 @@
-# -*- coding: UTF-8 -*-
+# -*- coding:utf-8 -*-
 
 from urllib import request
 import chardet
 
-if __name__ == "__main__":
-    response = request.urlopen("https://github.com/UrsusMountain")
+if __name__ == '__main__':
+    req = request.Request('https://github.com/UrsusMountain')
+    response = request.urlopen(req)
     html = response.read()
     charset = chardet.detect(html)
-    print("charset:",charset)
     html = html.decode(charset.get('encoding','utf-8'))
     print(html)
