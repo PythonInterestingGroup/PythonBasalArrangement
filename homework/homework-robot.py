@@ -120,19 +120,32 @@ class Robot(object):
 		print("turn right.current dir:",self.__dir)
 
 	def forwardX(self):
-		self.__coor.x += 1
+		if self.__dir == Direct.right:
+			self.__coor.x += 1
+		else :
+			print("方向错误")
 	def backX(self):
-		self.__coor.x -= 1
+		if self.__dir == Direct.left:
+			self.__coor.x -= 1
+		else :
+			print("方向错误")
 	def forwardY(self):
-		self.__coor.y += 1
+		if self.__dir == Direct.up:
+			self.__coor.y += 1
+		else :
+			print("方向错误")
 	def backY(self):
-		self.__coor.y -= 1
+		if self.__dir == Direct.down:
+			self.__coor.y -= 1
+		else:
+			print("方向错误")
+		
 
 
 c = Coordinare(2,6)
 r = Robot("john")
 r.moveToDestination(c)
-c.x = 4
+c.x = -4
 c.y = -2
 r.moveToDestination(c)
 
