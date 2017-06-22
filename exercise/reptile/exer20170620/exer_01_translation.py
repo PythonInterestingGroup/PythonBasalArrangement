@@ -5,9 +5,10 @@ from urllib import parse
 import json
 
 if __name__ == "__main__" :
-    Request_Url = "http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule&sessionFrom=https://www.baidu.com/link"
+    Request_Url = "http://fanyi.youdao.com/translate_o"
 
     From_Data = {}
+    From_Data['type'] = 'AUO'
     From_Data['i'] = 'python'
     From_Data['from'] = 'AUTO'
     From_Data['to'] = 'AUTO'
@@ -19,7 +20,6 @@ if __name__ == "__main__" :
     From_Data['version'] = '2.1'
     From_Data['action'] = 'fanyi.web'
     From_Data['smartresult'] = 'FY_BY_CLICKBUTTON'
-    From_Data['typoResult'] = 'true'
 
     data = parse.urlencode(From_Data).encode('utf-8')
     response = request.urlopen(Request_Url,data)
