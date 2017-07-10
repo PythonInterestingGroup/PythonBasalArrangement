@@ -5,7 +5,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "/usr/bin/pythonw",
+            "pythonPath": "/usr/bin/env python3",
             "program": "${file}",
             "cwd": "${workspaceRoot}",
             "env": {},
