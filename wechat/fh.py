@@ -11,7 +11,7 @@ sys.setdefaultencoding('utf8')
 # http://www.btans.com/search/%E9%95%BF%E5%9F%8E-first-asc-1
 def analyUrl(name):
 	url='http://www.btans.com/search/%s-first-asc-1'%name
-	print url	
+	# print url	
 	response=requests.get(url).content
 	selector = html.fromstring(response)
 	hrefs=selector.xpath('//div[@class="search-item"]')

@@ -19,7 +19,7 @@ def answerQ(question):
 		return mytext['text']
     except Exception as e:
     	# print e
-		return '我不知道,不会百度么'
+		return '我也不知道,我再问问'
     # return result
  #    try:
  #    	r = requests.post(apiUrl, data=payload)
@@ -104,8 +104,8 @@ def onQQMessage(bot, contact, member, content):
    	elif '@ME' in content:
 		bot.SendTo(contact, answerQ(content))
 	elif content == '-stop':
-		bot.SendTo(contact, 'QQ机器人已关闭')
-		bot.Stop()
+		bot.SendTo(contact, 'QQ机器人假装关一下满足你的虚荣心')
+		# bot.Stop()
 
 if __name__ == '__main__':
     # 注意： 这一行之前的代码会被执行两边

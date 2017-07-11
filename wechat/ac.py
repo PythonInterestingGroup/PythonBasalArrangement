@@ -31,4 +31,4 @@ def analyUrl(name):
 def searchFH(name):
 	seedstr = '\n'.join(analyUrl(name))
 	return	seedstr
-print searchFH('韩服王者')
+# print searchFH('韩服王者')

@@ -1,8 +1,14 @@
 # -*- coding: utf-8 -*-
 import requests
 import json
-
+import os
+import time
+import sys
 KEY='70a315f07d324b3ea02cf21d13796605'
+def restart_program():
+    print 'restart'
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
 
 def answerQ(question):
     apiUrl='http://www.tuling123.com/openapi/api'
@@ -17,8 +23,11 @@ def answerQ(question):
         return mytext['text']
     except Exception as e:
         print e
-        return '网太卡了,我什么都不知道'
-print answerQ('北京天气')
+        # restart_program()
+        return 'bug'
+if __name__ == "__main__":
+
+    print answerQ('北京天气')
 
 # def answerQ(question):
 #     apiUrl='http://www.tuling123.com/openapi/api'

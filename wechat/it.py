@@ -14,6 +14,7 @@ def onQQMessage(bot, contact, member, content):
     # elif content == '-stop':
     #     bot.SendTo(contact, 'QQ机器人已关闭')
     #     bot.Stop()
+    # print dir(contact)
     bot.SendTo(contact, )
     
 @itchat.msg_register([TEXT, MAP, CARD, NOTE, SHARING], isGroupChat=True)
