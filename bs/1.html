@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>散列画廊 by:Bowen</title>
+		<link rel="stylesheet" href="gallery.css">
+		<script src="js/mui.min.js"></script>
+		<script src="js/vue2.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue-tap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/h.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="gallery.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+	</head>
+
+	<body id="parent">
+		<div class="wrap" id="wrap">
+			<div class="photo photo-front " onclick="turn(this)" id="photo_{{index}}">
+				<!--控制2D位置、旋转-->
+				<div class="photo-wrap">
+					<!--控制3D翻转-->
+
+					<div class="side side-front">
+						<p class="image">
+							<img src="{{img}}" alt="{{img}}">
+						</p>
+						<!--<p class="caption ">{{caption}}</p>-->
+					</div>
+					<div class="side side-back ">
+						<!--<p class="desc ">{{desc}}</p>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--<script src="img/data.js "></script>-->
+		<script type="text/javascript ">
+			var jsonarray = new Array();
+
+			function getjson() {
+				mui.ajax('http://116.62.168.251:8080/WebServe/GetRandomPicture', {
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					type: 'get',
+					timeout: 100000,
+					dataType: 'json',
+					success: function(result) {
+						console.log(result);
+						jsonarray = result;
+						addPhotos();
+					},
+					error: function(xhr, type, errorThrown) {
+						//异常处理；
+						console.log(type);
+					}
+
+				});
+			}
+			//输出所有海报
+			function addPhotos() {
+				var template = get('#wrap').innerHTML;
+				var html = [];
+				var nav = [];
+				for(var i in jsonarray) {
+					var _html = template
+						.replace('{{index}}', i)
+						.replace('{{img}}', jsonarray[i].imgurl)
+					html.push(_html);
+					var _nav = '<span id="nav_' + i +
+						'" class="i" onclick="turn(get(\'#photo_' + i +
+						'\'))"></span>';
+					nav.push(_nav);
+				}
+				html.push('<nav id="nav " class="nav ">' + nav.join('') + '</nav>');
+				get('#wrap').innerHTML = html.join('');
+				resort(random([0, jsonarray.length]));
+			}
+
+			$(function() {
+				//        debugger;
+				getjson();
+			});
+		</script>
+	</body>
+
+</html>
