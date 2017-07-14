@@ -1,0 +1,78 @@
+1. HTML是网页内容的载体。内容就是网页制作者放在页面上想要让用户浏览的信息，可以包含文字、图片、视频等。
+2. CSS样式是表现。就像网页的外衣。比如，标题字体、颜色变化，或为标题加入背景图片、边框等。所有这些用来改变内容外观的东西称之为表现。
+3. JavaScript是用来实现网页上的特效效果。如：鼠标滑过弹出下拉菜单。或鼠标滑过表格的背景颜色改变。还有焦点新闻（新闻图片）的轮换。可以这么理解，有动画的，有交互的一般都是用JavaScript来实现的.
+html-head-body
+
+<head>
+    <title>...</title>
+    <meta>
+    <link>
+    <style>...</style>
+    <script>...</script>
+</head>
+
+body:
+<hx>（1,2,3,4,5,6） 标题
+<p>段落
+强调
+<strong> 加粗
+<em>斜体
+<span>特定格式  head里加span{}
+<q>引用文本</q> 短文本引用 注意要引用的文本不用加双引号，浏览器会对q标签自动添加双引号。
+<blockquote>引用文本</blockquote> 长文本引用 缩进样式（左右都缩进）
+<br />或者<br> 相当于回车 在 html 中是忽略回车和空格的
+&nbsp;空格
+<hr>html4.01版本，<hr /> xhtml1.0版本 ，添加水平横线
+<address>联系地址信息</address> 默认斜体
+<code>代码语言</code>  一行代码
+<pre>语言代码段</pre>  如果是多行代码，可以使用<pre>标签。
+<ul>
+  <li>信息</li>
+  <li>信息</li>
+   ......
+</ul>使用ul，添加新闻信息列表，没有前后顺序的信息列表。ul-li在网页中显示的默认样式一般为：每项li前都自带一个圆点
+<ol>
+   <li>信息</li>
+   <li>信息</li>
+   ......
+</ol>使用ol，添加图书销售排行榜，有前后顺序的信息列表，显示的默认样式一般为：每项<li>前都自带一个序号，序号默认从1开始
+<div>…</div>把一些独立的逻辑部分划分出来，放在一个<div>标签中，这个<div>标签的作用就相当于一个容器。什么是逻辑部分？它是页面上相互关联的一组元素。如网页中的独立的栏目版块，就是一个典型的逻辑部分。
+<div  id="版块名称">…</div> 用id属性来为<div>提供唯一的名称
+
+table标签，认识网页上的表格
+创建表格的四个元素：
+table、tbody、tr、th、td
+1、<table>…</table>：整个表格以<table>标记开始、</table>标记结束。
+2、<tbody>…</tbody>：如果不加<thead><tbody><tfooter> , table表格加载完后才显示。加上这些表格结构， tbody包含行的内容下载完优先显示，不必等待表格结束后在显示，同时如果表格很长，用tbody分段，可以一部分一部分地显示。（通俗理解table 可以按结构一块块的显示，不在等整个表格加载完后显示。）
+3、<tr>…</tr>：表格的一行，所以有几对tr 表格就有几行。
+4、<td>…</td>：表格的一个单元格，一行中包含几对<td>...</td>，说明一行中就有几列。
+5、<th>…</th>：表格的头部的一个单元格，表格表头。
+6、表格中列的个数，取决于一行中数据单元格的个数。
+
+用css样式，为表格加入边框
+head中添加
+<style type="text/css">
+table tr td,th{border:1px solid #000;}
+</style>
+
+<table summary="表格简介文本">  摘要
+<caption>标题文本</caption> caption标签，为表格添加标题和摘要
+
+<a  href="目标网址"  title="鼠标滑过显示的文本">链接显示的文本</a> 使用<a>标签，链接到另一个页面
+<a>标签在默认情况下，链接的网页是在当前浏览器窗口中打开，有时我们需要在新的浏览器窗口中打开。
+<a href="目标网址" target="_blank">click here!</a>
+
+使用mailto在网页中链接Email地址
+mailto:浏览器自动调用默认客户端电子程序，并在收件人框中自动填上收件人地址<a href="mailto:yy@imooc.com">发送</a>
+cc=抄送地址 <a href="mailto:yy@imooc.com？cc=lal@qq.com">发送</a>
+bcc=密件抄送地址<a href="mailto:yy@imooc.com？bcc=lal@qq.com">发送</a>
+;隔开多个收件人地址<a href="mailto:yy@imooc.com;12@qq.com">发送</a>
+subject= 添加邮件主题<a href="mailto:yy@imooc.com？subject=f发送电子邮件">发送</a>
+body= 添加邮件内容 <a href="mailto:yy@imooc.com？body=欢迎">发送</a>
+注意：如果mailto后面同时有多个参数的话，第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔。
+
+<img src="图片地址" alt="下载失败时的替换文本" title = "提示文本">插入图片
+1、src：标识图像的位置；
+2、alt：指定图像的描述性文本，当图像不可见时（下载不成功时），可看到该属性指定的文本；
+3、title：提供在图像可见时对图像的描述(鼠标滑过图片时显示的文本)；
+4、图像可以是GIF，PNG，JPEG格式的图像文件。
