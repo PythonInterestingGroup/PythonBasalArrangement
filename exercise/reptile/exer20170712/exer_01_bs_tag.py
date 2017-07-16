@@ -6,6 +6,7 @@
 ## Comment
 
 from bs4 import BeautifulSoup
+from bs4 import element
 
 html = """
 <html>
@@ -22,35 +23,16 @@ html = """
 </html>
 """
 soup = BeautifulSoup(html,'lxml')
-# 查找标签的内容,返回的是查到的第一个
-print('==========html==========')
-print(soup.html)
-print('==========head=========')
-print(soup.head)
-print('==========title=========')
-print(soup.title)
-print('==========a=========')
-print(soup.a)
-print('==========p=========')
-print(soup.p)
-print('======================')
-print('name:')
-print(soup.name)
-print(soup.title.name)
-print('type(soup.name):',type(soup.title))
-print('type(soup.title.name):',type(soup.title.name))
-print('======================')
-print('attrs:')
-## 返回一个集合(set)
-print(soup.a['class'])
-print(soup.a.attrs)
-print(soup.a.get('href'))
-# print(soup.a.get('herf'))
-print(soup.a['id'])
-print(soup.p.get('class')[0])
-print('=====================')
-print('NavigableString')
-print(soup.title.string)
+
+## Comment
+## Comment对象是一个特殊类型的NavigableString对象，其实输出的内容仍然不包括注释符号
+print(soup.li)
+print(soup.li.string)
+print(type(soup.li.string))
+
+if type(soup.li.string) == element.Comment:
+    print(soup.li.string)
+
 
 
 
