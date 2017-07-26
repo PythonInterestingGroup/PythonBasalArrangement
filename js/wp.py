@@ -22,7 +22,7 @@ driver = webdriver.Firefox()
 #     'Cookie': 'Hm_lvt_74590c71164d9fba556697bee04ad65c=1496372413,1496373199,1496383649,1497857804; ct_uid=e9a0d03f40f9327f008cb2ea02a2d734; unique_id=3c6c03; clicktopay=1496373051617; Hm_lpvt_74590c71164d9fba556697bee04ad65c=1497857833; PHPSESSID=oiao7vdcs8k8r7rms3pl9t5gt3; pubcookie=VzIGNwc1VGhSYFE%2FB2sJPlNcCW8DDQMxXGAEPgBvBGwDZA8%2BADVQYQM%2BU0RXe1QnAioBPQNrUT8NCANtWjJRMVc3BjUHN1RlUmVRMAdTCTpTZQluAzADOVxjBDUAawRsA28PTQB0UCkDKFNnV2VUOwINAW8DMFFrDTYDOVo0UTdXOwY3BzNUVVI0UWMHaQlqU2cJYwM8AzBcYAQ2AD0ENgNuD2gANlBqAz5TMldvVG8CYQE4AzVRNw1jA2daN1FkV2AGNgdkVGg%3D',
 #     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 # }
-Cookie='Hm_lvt_74590c71164d9fba556697bee04ad65c=1496372413,1496373199,1496383649,1497857804; ct_uid=e9a0d03f40f9327f008cb2ea02a2d734; unique_id=3c6c03; clicktopay=1496373051617; Hm_lpvt_74590c71164d9fba556697bee04ad65c=1497857833; PHPSESSID=oiao7vdcs8k8r7rms3pl9t5gt3; pubcookie=VzIGNwc1VGhSYFE%2FB2sJPlNcCW8DDQMxXGAEPgBvBGwDZA8%2BADVQYQM%2BU0RXe1QnAioBPQNrUT8NCANtWjJRMVc3BjUHN1RlUmVRMAdTCTpTZQluAzADOVxjBDUAawRsA28PTQB0UCkDKFNnV2VUOwINAW8DMFFrDTYDOVo0UTdXOwY3BzNUVVI0UWMHaQlqU2cJYwM8AzBcYAQ2AD0ENgNuD2gANlBqAz5TMldvVG8CYQE4AzVRNw1jA2daN1FkV2AGNgdkVGg%3D'
+Cookie='Hm_lvt_74590c71164d9fba556697bee04ad65c=1501037472; Hm_lpvt_74590c71164d9fba556697bee04ad65c=1501037482; PHPSESSID=9ks2c9q5ft684130qff5pi2dv0; pubcookie=UjcENQU3UGwOPABuVTkEM1FeWjwADgIwCTUEPl8wAWkDZAY3BTAENQI%2FV0BTfwd0UXldYQhgBGpbXgNtXDRVNVIyBDcFNVBhDjkAYVUBBDdRZ1o9ADMCOAk2BDVfNAFpA28GRAVxBH0CKVdjU2EHaFFeXTMIOgQ3W2YDMVw0VTNSMgQ%2BBTJQUQ4yADFVOgQ1UTZaYwA1AmIJPQRlXzcBMQMyBmUFYQRuAjNXMVNvBzBRYl0wCGoENVtkAzhcMFVhUjAEYgVhUG8%3D; ct_uid=e9a0d03f40f9327f008cb2ea02a2d734'
 cookies=[] 
 for line in Cookie.split(';'):  
   key,value=line.split('=',1)#1代表只分一次，得到两个数据  
@@ -41,7 +41,9 @@ for x in cookies:
 	driver.add_cookie(x)
 # time.sleep(12) 
 
-driver.get("https://home.ctfile.com/#item-files")
+# driver.get("https://home.ctfile.com/#item-files")
+# driver.get("https://www.ctfile.com/index.php?item=account&action=login&ref=https%3A//www.ctfile.com/")
+
 
 time.sleep(12) 
 
